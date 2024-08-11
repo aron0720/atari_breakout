@@ -1,0 +1,22 @@
+{
+  "name": "phaser_electron_vite_template",
+  "version": "1.0.0",
+  "description": "Template for phaser, electron and vite",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite --config vite.config.mjs",
+    "build": "vite build --config vite.config.mjs",
+    "start": "electron .",
+    "pack": "electron-packager . phaser-electron-app-name --platform win32 --arch x64 --overwrite --out exe"
+  },
+  "author": "Mossy_Pebble",
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.3",
+    "electron": "^31.3.1",
+    "vite": "^5.3.5"
+  }
+}
